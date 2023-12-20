@@ -1,6 +1,6 @@
 import { DefaultTheme } from "styled-components";
-import bgLarge from "../assets/imgs/background-pattern-desktop.svg";
-import bgSmall from "../assets/imgs/background-pattern-mobile.svg";
+import bgLarge from "../../src/assets/imgs/background-pattern-desktop.svg";
+import bgSmall from "../../src/assets/imgs/background-pattern-mobile.svg";
 
 export const theme: DefaultTheme = {
   colors: {
