@@ -15,13 +15,6 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
      background-color: ${({ theme }) => theme.colors.light_pink};
-     background-image: url(${({ theme }) => theme.images.background_large});
-     background-repeat: no-repeat;
-     background-size: contain;
-
-     @media screen and (max-width: 768px) {
-      background-image: url(${({ theme }) => theme.images.background_small});
-     }
     }
 
     h1 {
@@ -42,6 +35,14 @@ export const GlobalStyles = createGlobalStyle`
       align-items: center;
       justify-content: center;
       padding-inline: 2rem;
+
+      background-image: url(${({ theme }) => theme.images.background_large});
+      background-repeat: no-repeat;
+      background-size: contain;
+
+     @media screen and (max-width: 768px) {
+      background-image: url(${({ theme }) => theme.images.background_small});
+     }
     }
 
 `;
