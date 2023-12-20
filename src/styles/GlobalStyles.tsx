@@ -1,6 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import bgLarge from "../assets/imgs/background-pattern-desktop.svg";
-import bgSmall from "../assets/imgs/background-pattern-mobile.svg";
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -17,12 +15,12 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
      background-color: ${({ theme }) => theme.colors.light_pink};
-     background-image: url(${bgLarge});
+     background-image: url(${({ theme }) => theme.images.background_large});
      background-repeat: no-repeat;
      background-size: contain;
 
      @media screen and (max-width: 768px) {
-      background-image: url(${bgSmall});
+      background-image: url(${({ theme }) => theme.images.background_small});
      }
     }
 

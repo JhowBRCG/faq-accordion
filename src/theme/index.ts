@@ -1,4 +1,6 @@
 import { DefaultTheme } from "styled-components";
+import bgLarge from "../assets/imgs/background-pattern-desktop.svg";
+import bgSmall from "../assets/imgs/background-pattern-mobile.svg";
 
 export const theme: DefaultTheme = {
   colors: {
@@ -15,5 +17,10 @@ export const theme: DefaultTheme = {
 
   fonts: {
     primary_font: "'Work Sans', sans-serif",
+  },
+
+  images: {
+    background_large: bgLarge,
+    background_small: bgSmall,
   },
 };
