@@ -17,10 +17,5 @@ declare module "styled-components" {
     fonts: {
       primary_font: string;
     };
-
-    images: {
-      background_large: string;
-      background_small: string;
-    };
   }
 }
